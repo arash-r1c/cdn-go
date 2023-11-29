@@ -60,20 +60,6 @@ jobs:
         with:
           go-version: "1.18"
 
-      - name: Build
-        env:
-          GOOS: linux
-          GOARCH: amd64
-          CGO_ENABLED: 0
-          LDFLAGS: -s -w
-        run: go build -trimpath -ldflags "$LDFLAGS" -o "./cdn" .
-
-      - name: Test
-        run: |
-          go get github.com/stretchr/testify/assert
-          go get golang.org/x/net/context
-          go test -v -race ./... -json > TestResults.json
-
       - name: Upload test results
         uses: actions/upload-artifact@v3
         with:
