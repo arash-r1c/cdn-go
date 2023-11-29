@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Saved** | Pointer to **int32** |  | [optional] 
-**Total** | Pointer to **int32** |  | [optional] 
+**Saved** | Pointer to **int64** |  | [optional] 
+**Total** | Pointer to **int64** |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetSaved
 
-`func (o *SavedTrafficsStatisticsTraffic) GetSaved() int32`
+`func (o *SavedTrafficsStatisticsTraffic) GetSaved() int64`
 
 GetSaved returns the Saved field if non-nil, zero value otherwise.
 
 ### GetSavedOk
 
-`func (o *SavedTrafficsStatisticsTraffic) GetSavedOk() (*int32, bool)`
+`func (o *SavedTrafficsStatisticsTraffic) GetSavedOk() (*int64, bool)`
 
 GetSavedOk returns a tuple with the Saved field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSaved
 
-`func (o *SavedTrafficsStatisticsTraffic) SetSaved(v int32)`
+`func (o *SavedTrafficsStatisticsTraffic) SetSaved(v int64)`
 
 SetSaved sets Saved field to given value.
 
@@ -53,20 +53,20 @@ HasSaved returns a boolean if a field has been set.
 
 ### GetTotal
 
-`func (o *SavedTrafficsStatisticsTraffic) GetTotal() int32`
+`func (o *SavedTrafficsStatisticsTraffic) GetTotal() int64`
 
 GetTotal returns the Total field if non-nil, zero value otherwise.
 
 ### GetTotalOk
 
-`func (o *SavedTrafficsStatisticsTraffic) GetTotalOk() (*int32, bool)`
+`func (o *SavedTrafficsStatisticsTraffic) GetTotalOk() (*int64, bool)`
 
 GetTotalOk returns a tuple with the Total field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTotal
 
-`func (o *SavedTrafficsStatisticsTraffic) SetTotal(v int32)`
+`func (o *SavedTrafficsStatisticsTraffic) SetTotal(v int64)`
 
 SetTotal sets Total field to given value.
 

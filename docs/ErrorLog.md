@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | Pointer to **string** | The error message | [optional] 
-**Count** | Pointer to **int32** | The error&#39;s count | [optional] 
+**Count** | Pointer to **int64** | The error&#39;s count | [optional] 
 **Upstreams** | Pointer to [**[]ErrorLogUpstreamsInner**](ErrorLogUpstreamsInner.md) |  | [optional] 
 
 ## Methods
@@ -54,20 +54,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetCount
 
-`func (o *ErrorLog) GetCount() int32`
+`func (o *ErrorLog) GetCount() int64`
 
 GetCount returns the Count field if non-nil, zero value otherwise.
 
 ### GetCountOk
 
-`func (o *ErrorLog) GetCountOk() (*int32, bool)`
+`func (o *ErrorLog) GetCountOk() (*int64, bool)`
 
 GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCount
 
-`func (o *ErrorLog) SetCount(v int32)`
+`func (o *ErrorLog) SetCount(v int64)`
 
 SetCount sets Count field to given value.
 

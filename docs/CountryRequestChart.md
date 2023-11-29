@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FillKey** | Pointer to **int32** | The fill key for the country | [optional] 
+**FillKey** | Pointer to **int64** | The fill key for the country | [optional] 
 **Name** | Pointer to **string** | The name of the country | [optional] 
-**Value** | Pointer to **int32** | The number of requests from the country | [optional] 
+**Value** | Pointer to **int64** | The number of requests from the country | [optional] 
 
 ## Methods
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetFillKey
 
-`func (o *CountryRequestChart) GetFillKey() int32`
+`func (o *CountryRequestChart) GetFillKey() int64`
 
 GetFillKey returns the FillKey field if non-nil, zero value otherwise.
 
 ### GetFillKeyOk
 
-`func (o *CountryRequestChart) GetFillKeyOk() (*int32, bool)`
+`func (o *CountryRequestChart) GetFillKeyOk() (*int64, bool)`
 
 GetFillKeyOk returns a tuple with the FillKey field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFillKey
 
-`func (o *CountryRequestChart) SetFillKey(v int32)`
+`func (o *CountryRequestChart) SetFillKey(v int64)`
 
 SetFillKey sets FillKey field to given value.
 
@@ -79,20 +79,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetValue
 
-`func (o *CountryRequestChart) GetValue() int32`
+`func (o *CountryRequestChart) GetValue() int64`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *CountryRequestChart) GetValueOk() (*int32, bool)`
+`func (o *CountryRequestChart) GetValueOk() (*int64, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *CountryRequestChart) SetValue(v int32)`
+`func (o *CountryRequestChart) SetValue(v int64)`
 
 SetValue sets Value field to given value.
 

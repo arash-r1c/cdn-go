@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Country** | Pointer to **string** | The name of the country | [optional] 
 **Code** | Pointer to **string** | The 2-letter country code | [optional] 
-**Requests** | Pointer to **int32** | The number of requests from the country | [optional] 
-**Traffics** | Pointer to **int32** | The amount of traffic from the country | [optional] 
+**Requests** | Pointer to **int64** | The number of requests from the country | [optional] 
+**Traffics** | Pointer to **int64** | The amount of traffic from the country | [optional] 
 
 ## Methods
 
@@ -80,20 +80,20 @@ HasCode returns a boolean if a field has been set.
 
 ### GetRequests
 
-`func (o *CountryList) GetRequests() int32`
+`func (o *CountryList) GetRequests() int64`
 
 GetRequests returns the Requests field if non-nil, zero value otherwise.
 
 ### GetRequestsOk
 
-`func (o *CountryList) GetRequestsOk() (*int32, bool)`
+`func (o *CountryList) GetRequestsOk() (*int64, bool)`
 
 GetRequestsOk returns a tuple with the Requests field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRequests
 
-`func (o *CountryList) SetRequests(v int32)`
+`func (o *CountryList) SetRequests(v int64)`
 
 SetRequests sets Requests field to given value.
 
@@ -105,20 +105,20 @@ HasRequests returns a boolean if a field has been set.
 
 ### GetTraffics
 
-`func (o *CountryList) GetTraffics() int32`
+`func (o *CountryList) GetTraffics() int64`
 
 GetTraffics returns the Traffics field if non-nil, zero value otherwise.
 
 ### GetTrafficsOk
 
-`func (o *CountryList) GetTrafficsOk() (*int32, bool)`
+`func (o *CountryList) GetTrafficsOk() (*int64, bool)`
 
 GetTrafficsOk returns a tuple with the Traffics field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTraffics
 
-`func (o *CountryList) SetTraffics(v int32)`
+`func (o *CountryList) SetTraffics(v int64)`
 
 SetTraffics sets Traffics field to given value.
 

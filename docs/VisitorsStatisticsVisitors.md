@@ -5,13 +5,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TopVisitors** | **time.Time** |  | 
-**TotalVisitors** | **int32** |  | 
+**TotalVisitors** | **int64** |  | 
 
 ## Methods
 
 ### NewVisitorsStatisticsVisitors
 
-`func NewVisitorsStatisticsVisitors(topVisitors time.Time, totalVisitors int32, ) *VisitorsStatisticsVisitors`
+`func NewVisitorsStatisticsVisitors(topVisitors time.Time, totalVisitors int64, ) *VisitorsStatisticsVisitors`
 
 NewVisitorsStatisticsVisitors instantiates a new VisitorsStatisticsVisitors object
 This constructor will assign default values to properties that have it defined,
@@ -48,20 +48,20 @@ SetTopVisitors sets TopVisitors field to given value.
 
 ### GetTotalVisitors
 
-`func (o *VisitorsStatisticsVisitors) GetTotalVisitors() int32`
+`func (o *VisitorsStatisticsVisitors) GetTotalVisitors() int64`
 
 GetTotalVisitors returns the TotalVisitors field if non-nil, zero value otherwise.
 
 ### GetTotalVisitorsOk
 
-`func (o *VisitorsStatisticsVisitors) GetTotalVisitorsOk() (*int32, bool)`
+`func (o *VisitorsStatisticsVisitors) GetTotalVisitorsOk() (*int64, bool)`
 
 GetTotalVisitorsOk returns a tuple with the TotalVisitors field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTotalVisitors
 
-`func (o *VisitorsStatisticsVisitors) SetTotalVisitors(v int32)`
+`func (o *VisitorsStatisticsVisitors) SetTotalVisitors(v int64)`
 
 SetTotalVisitors sets TotalVisitors field to given value.
 

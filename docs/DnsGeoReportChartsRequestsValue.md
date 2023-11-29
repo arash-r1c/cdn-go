@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FillKey** | Pointer to **int32** |  | [optional] 
+**FillKey** | Pointer to **int64** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Value** | Pointer to **int32** |  | [optional] 
+**Value** | Pointer to **int64** |  | [optional] 
 
 ## Methods
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetFillKey
 
-`func (o *DnsGeoReportChartsRequestsValue) GetFillKey() int32`
+`func (o *DnsGeoReportChartsRequestsValue) GetFillKey() int64`
 
 GetFillKey returns the FillKey field if non-nil, zero value otherwise.
 
 ### GetFillKeyOk
 
-`func (o *DnsGeoReportChartsRequestsValue) GetFillKeyOk() (*int32, bool)`
+`func (o *DnsGeoReportChartsRequestsValue) GetFillKeyOk() (*int64, bool)`
 
 GetFillKeyOk returns a tuple with the FillKey field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFillKey
 
-`func (o *DnsGeoReportChartsRequestsValue) SetFillKey(v int32)`
+`func (o *DnsGeoReportChartsRequestsValue) SetFillKey(v int64)`
 
 SetFillKey sets FillKey field to given value.
 
@@ -79,20 +79,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetValue
 
-`func (o *DnsGeoReportChartsRequestsValue) GetValue() int32`
+`func (o *DnsGeoReportChartsRequestsValue) GetValue() int64`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *DnsGeoReportChartsRequestsValue) GetValueOk() (*int32, bool)`
+`func (o *DnsGeoReportChartsRequestsValue) GetValueOk() (*int64, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *DnsGeoReportChartsRequestsValue) SetValue(v int32)`
+`func (o *DnsGeoReportChartsRequestsValue) SetValue(v int64)`
 
 SetValue sets Value field to given value.
 

@@ -2,7 +2,7 @@
 
 Use this documentation to learn how to use the ArvanCloud SDK.
 
-**API version**: 4.114.0
+**API version**: 4.115.7
 
 ## Dependencies
 
@@ -18,7 +18,7 @@ go get golang.org/x/net/context
 Get the package:
 
 ```bash
-go get git.arvancloud.ir/arvancloud/cdn-go
+go get github.com/arvancloud/cdn-go
 ```
 
 Put the package under your project folder and add the following in import:

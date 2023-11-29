@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: ArvanCloud CDN Services
-  version: 4.114.0
+  version: 4.115.7
   x-logo:
     url: /images/other/arvan-api-docs-logo.svg
     backgroundColor: white
@@ -10062,9 +10062,11 @@ components:
           type: string
         requests:
           description: The number of requests from the country
+          format: int64
           type: integer
         traffics:
           description: The amount of traffic from the country
+          format: int64
           type: integer
       type: object
     CountryRequestChart:
@@ -10077,12 +10079,14 @@ components:
       properties:
         fillKey:
           description: The fill key for the country
+          format: int64
           type: integer
         name:
           description: The name of the country
           type: string
         value:
           description: The number of requests from the country
+          format: int64
           type: integer
       type: object
     CountryTrafficChart:
@@ -10093,12 +10097,14 @@ components:
       properties:
         fillKey:
           description: The fill key for the country
+          format: int64
           type: integer
         name:
           description: The name of the country
           type: string
         value:
           description: The amount of traffic from the country
+          format: int64
           type: integer
       type: object
     CountryList:
@@ -10116,9 +10122,11 @@ components:
           type: string
         requests:
           description: The number of requests from the country
+          format: int64
           type: integer
         traffics:
           description: The amount of traffic from the country
+          format: int64
           type: integer
       type: object
     MapTrafficsData:
@@ -10341,6 +10349,7 @@ components:
         ip:
           $ref: '#/components/schemas/HighRequestedIp_ip'
         request_count:
+          format: int64
           type: integer
       type: object
     ResponseTime:
@@ -10497,6 +10506,7 @@ components:
           type: string
         count:
           description: The error's count
+          format: int64
           type: integer
         upstreams:
           items:
@@ -10858,6 +10868,7 @@ components:
           format: uri
           type: string
         count:
+          format: int64
           type: integer
       type: object
     AttackReportUriData:
@@ -21113,8 +21124,10 @@ components:
     SavedTrafficsStatistics_traffic:
       properties:
         saved:
+          format: int64
           type: integer
         total:
+          format: int64
           type: integer
       type: object
     TransportLayerProxyTrafficCharts_traffics_series_inner:
@@ -21127,6 +21140,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21160,6 +21174,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21207,6 +21222,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21248,13 +21264,16 @@ components:
         saved: 0
       properties:
         saved:
+          format: int64
           type: integer
         bypass:
+          format: int64
           type: integer
         top:
           format: date-time
           type: string
         total:
+          format: int64
           type: integer
       required:
       - saved
@@ -21270,6 +21289,7 @@ components:
           format: date-time
           type: string
         total_visitors:
+          format: int64
           type: integer
       required:
       - top_visitors
@@ -21288,6 +21308,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21433,12 +21454,16 @@ components:
         "2xx_sum": 0
       properties:
         "2xx_sum":
+          format: int64
           type: integer
         "3xx_sum":
+          format: int64
           type: integer
         "4xx_sum":
+          format: int64
           type: integer
         "5xx_sum":
+          format: int64
           type: integer
       type: object
     StatusCodeReport_statistics:
@@ -21555,6 +21580,7 @@ components:
           type: string
         count:
           description: Error count per upstream
+          format: int64
           type: integer
       type: object
     ErrorLogChart_statistics:
@@ -21579,6 +21605,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21638,6 +21665,7 @@ components:
         top: 2000-01-23T04:56:07.000+00:00
       properties:
         total:
+          format: int64
           type: integer
         top:
           format: date-time
@@ -21656,6 +21684,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21712,10 +21741,12 @@ components:
     DnsGeoReport_charts_requests_value:
       properties:
         fillKey:
+          format: int64
           type: integer
         name:
           type: string
         value:
+          format: int64
           type: integer
       type: object
     DnsGeoReport_charts:
@@ -21751,6 +21782,7 @@ components:
         code:
           type: string
         requests:
+          format: int64
           type: integer
       type: object
     AttackReport_statistics:
@@ -21775,6 +21807,7 @@ components:
           type: string
         data:
           items:
+            format: int64
             type: integer
           type: array
       type: object
@@ -21846,6 +21879,7 @@ components:
           type: string
         attack:
           description: The number of attacks
+          format: int64
           type: integer
       type: object
     AttackReportMap_charts_attacks_value:
@@ -21856,12 +21890,14 @@ components:
       properties:
         fillKey:
           description: A numerical key used for coloring the map
+          format: int64
           type: integer
         name:
           description: The name of the country
           type: string
         value:
           description: The number of attacks
+          format: int64
           type: integer
       type: object
     AttackReportMap_charts:
@@ -21884,10 +21920,13 @@ components:
         others: 5
       properties:
         iran:
+          format: int64
           type: integer
         europe_americas:
+          format: int64
           type: integer
         others:
+          format: int64
           type: integer
       type: object
     BulkTrafficReport_data:
@@ -21900,8 +21939,10 @@ components:
           others: 5
       properties:
         requests:
+          format: int64
           type: integer
         ingress_bytes:
+          format: int64
           type: integer
         egress_bytes:
           $ref: '#/components/schemas/BulkTrafficReport_data_egress_bytes'
@@ -21911,6 +21952,7 @@ components:
         visitors: 0
       properties:
         visitors:
+          format: int64
           type: integer
       type: object
     EmailForwardingRecipientsList_inner:

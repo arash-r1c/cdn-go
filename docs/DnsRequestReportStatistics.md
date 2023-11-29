@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Total** | Pointer to **int32** |  | [optional] 
+**Total** | Pointer to **int64** |  | [optional] 
 **Top** | Pointer to **time.Time** |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetTotal
 
-`func (o *DnsRequestReportStatistics) GetTotal() int32`
+`func (o *DnsRequestReportStatistics) GetTotal() int64`
 
 GetTotal returns the Total field if non-nil, zero value otherwise.
 
 ### GetTotalOk
 
-`func (o *DnsRequestReportStatistics) GetTotalOk() (*int32, bool)`
+`func (o *DnsRequestReportStatistics) GetTotalOk() (*int64, bool)`
 
 GetTotalOk returns a tuple with the Total field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTotal
 
-`func (o *DnsRequestReportStatistics) SetTotal(v int32)`
+`func (o *DnsRequestReportStatistics) SetTotal(v int64)`
 
 SetTotal sets Total field to given value.
 

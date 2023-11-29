@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | Pointer to **string** |  | [optional] 
-**Data** | Pointer to **[]int32** |  | [optional] 
+**Data** | Pointer to **[]int64** |  | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *DnsRequestReportChartsRequestsSeriesInner) GetData() []int32`
+`func (o *DnsRequestReportChartsRequestsSeriesInner) GetData() []int64`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *DnsRequestReportChartsRequestsSeriesInner) GetDataOk() (*[]int32, bool)`
+`func (o *DnsRequestReportChartsRequestsSeriesInner) GetDataOk() (*[]int64, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *DnsRequestReportChartsRequestsSeriesInner) SetData(v []int32)`
+`func (o *DnsRequestReportChartsRequestsSeriesInner) SetData(v []int64)`
 
 SetData sets Data field to given value.
 

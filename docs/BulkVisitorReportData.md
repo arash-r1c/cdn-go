@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Visitors** | Pointer to **int32** |  | [optional] 
+**Visitors** | Pointer to **int64** |  | [optional] 
 
 ## Methods
 
@@ -27,20 +27,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetVisitors
 
-`func (o *BulkVisitorReportData) GetVisitors() int32`
+`func (o *BulkVisitorReportData) GetVisitors() int64`
 
 GetVisitors returns the Visitors field if non-nil, zero value otherwise.
 
 ### GetVisitorsOk
 
-`func (o *BulkVisitorReportData) GetVisitorsOk() (*int32, bool)`
+`func (o *BulkVisitorReportData) GetVisitorsOk() (*int64, bool)`
 
 GetVisitorsOk returns a tuple with the Visitors field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVisitors
 
-`func (o *BulkVisitorReportData) SetVisitors(v int32)`
+`func (o *BulkVisitorReportData) SetVisitors(v int64)`
 
 SetVisitors sets Visitors field to given value.
 

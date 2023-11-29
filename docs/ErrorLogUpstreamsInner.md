@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Address** | Pointer to **string** | The upstream&#39;s address | [optional] 
-**Count** | Pointer to **int32** | Error count per upstream | [optional] 
+**Count** | Pointer to **int64** | Error count per upstream | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasAddress returns a boolean if a field has been set.
 
 ### GetCount
 
-`func (o *ErrorLogUpstreamsInner) GetCount() int32`
+`func (o *ErrorLogUpstreamsInner) GetCount() int64`
 
 GetCount returns the Count field if non-nil, zero value otherwise.
 
 ### GetCountOk
 
-`func (o *ErrorLogUpstreamsInner) GetCountOk() (*int32, bool)`
+`func (o *ErrorLogUpstreamsInner) GetCountOk() (*int64, bool)`
 
 GetCountOk returns a tuple with the Count field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCount
 
-`func (o *ErrorLogUpstreamsInner) SetCount(v int32)`
+`func (o *ErrorLogUpstreamsInner) SetCount(v int64)`
 
 SetCount sets Count field to given value.
 

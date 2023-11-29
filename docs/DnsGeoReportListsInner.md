@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Country** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Code** | Pointer to **string** |  | [optional] 
-**Requests** | Pointer to **int32** |  | [optional] 
+**Requests** | Pointer to **int64** |  | [optional] 
 
 ## Methods
 
@@ -105,20 +105,20 @@ HasCode returns a boolean if a field has been set.
 
 ### GetRequests
 
-`func (o *DnsGeoReportListsInner) GetRequests() int32`
+`func (o *DnsGeoReportListsInner) GetRequests() int64`
 
 GetRequests returns the Requests field if non-nil, zero value otherwise.
 
 ### GetRequestsOk
 
-`func (o *DnsGeoReportListsInner) GetRequestsOk() (*int32, bool)`
+`func (o *DnsGeoReportListsInner) GetRequestsOk() (*int64, bool)`
 
 GetRequestsOk returns a tuple with the Requests field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRequests
 
-`func (o *DnsGeoReportListsInner) SetRequests(v int32)`
+`func (o *DnsGeoReportListsInner) SetRequests(v int64)`
 
 SetRequests sets Requests field to given value.
 

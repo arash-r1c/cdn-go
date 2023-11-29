@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Ip** | Pointer to [**HighRequestedIpIp**](HighRequestedIpIp.md) |  | [optional] 
-**RequestCount** | Pointer to **int32** |  | [optional] 
+**RequestCount** | Pointer to **int64** |  | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasIp returns a boolean if a field has been set.
 
 ### GetRequestCount
 
-`func (o *HighRequestedIp) GetRequestCount() int32`
+`func (o *HighRequestedIp) GetRequestCount() int64`
 
 GetRequestCount returns the RequestCount field if non-nil, zero value otherwise.
 
 ### GetRequestCountOk
 
-`func (o *HighRequestedIp) GetRequestCountOk() (*int32, bool)`
+`func (o *HighRequestedIp) GetRequestCountOk() (*int64, bool)`
 
 GetRequestCountOk returns a tuple with the RequestCount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRequestCount
 
-`func (o *HighRequestedIp) SetRequestCount(v int32)`
+`func (o *HighRequestedIp) SetRequestCount(v int64)`
 
 SetRequestCount sets RequestCount field to given value.
 

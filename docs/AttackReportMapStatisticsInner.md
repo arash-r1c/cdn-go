@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Country** | Pointer to **string** | The 2-letter country code | [optional] 
 **Name** | Pointer to **string** | The name of the country | [optional] 
 **Code** | Pointer to **string** | The 3-letter country code | [optional] 
-**Attack** | Pointer to **int32** | The number of attacks | [optional] 
+**Attack** | Pointer to **int64** | The number of attacks | [optional] 
 
 ## Methods
 
@@ -105,20 +105,20 @@ HasCode returns a boolean if a field has been set.
 
 ### GetAttack
 
-`func (o *AttackReportMapStatisticsInner) GetAttack() int32`
+`func (o *AttackReportMapStatisticsInner) GetAttack() int64`
 
 GetAttack returns the Attack field if non-nil, zero value otherwise.
 
 ### GetAttackOk
 
-`func (o *AttackReportMapStatisticsInner) GetAttackOk() (*int32, bool)`
+`func (o *AttackReportMapStatisticsInner) GetAttackOk() (*int64, bool)`
 
 GetAttackOk returns a tuple with the Attack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAttack
 
-`func (o *AttackReportMapStatisticsInner) SetAttack(v int32)`
+`func (o *AttackReportMapStatisticsInner) SetAttack(v int64)`
 
 SetAttack sets Attack field to given value.
 

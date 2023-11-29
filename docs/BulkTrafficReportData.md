@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Requests** | Pointer to **int32** |  | [optional] 
-**IngressBytes** | Pointer to **int32** |  | [optional] 
+**Requests** | Pointer to **int64** |  | [optional] 
+**IngressBytes** | Pointer to **int64** |  | [optional] 
 **EgressBytes** | Pointer to [**BulkTrafficReportDataEgressBytes**](BulkTrafficReportDataEgressBytes.md) |  | [optional] 
 
 ## Methods
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetRequests
 
-`func (o *BulkTrafficReportData) GetRequests() int32`
+`func (o *BulkTrafficReportData) GetRequests() int64`
 
 GetRequests returns the Requests field if non-nil, zero value otherwise.
 
 ### GetRequestsOk
 
-`func (o *BulkTrafficReportData) GetRequestsOk() (*int32, bool)`
+`func (o *BulkTrafficReportData) GetRequestsOk() (*int64, bool)`
 
 GetRequestsOk returns a tuple with the Requests field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRequests
 
-`func (o *BulkTrafficReportData) SetRequests(v int32)`
+`func (o *BulkTrafficReportData) SetRequests(v int64)`
 
 SetRequests sets Requests field to given value.
 
@@ -54,20 +54,20 @@ HasRequests returns a boolean if a field has been set.
 
 ### GetIngressBytes
 
-`func (o *BulkTrafficReportData) GetIngressBytes() int32`
+`func (o *BulkTrafficReportData) GetIngressBytes() int64`
 
 GetIngressBytes returns the IngressBytes field if non-nil, zero value otherwise.
 
 ### GetIngressBytesOk
 
-`func (o *BulkTrafficReportData) GetIngressBytesOk() (*int32, bool)`
+`func (o *BulkTrafficReportData) GetIngressBytesOk() (*int64, bool)`
 
 GetIngressBytesOk returns a tuple with the IngressBytes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIngressBytes
 
-`func (o *BulkTrafficReportData) SetIngressBytes(v int32)`
+`func (o *BulkTrafficReportData) SetIngressBytes(v int64)`
 
 SetIngressBytes sets IngressBytes field to given value.
 
