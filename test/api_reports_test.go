@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/arash-r1c/cdn-go-sdk"
+	openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func Test_arvancloud_ReportsApiService(t *testing.T) {

@@ -27,7 +27,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/arash-r1c/cdn-go-sdk"
+    openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func main() {
@@ -98,7 +98,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/arash-r1c/cdn-go-sdk"
+    openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func main() {
@@ -170,7 +170,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/arash-r1c/cdn-go-sdk"
+    openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func main() {
@@ -241,7 +241,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/arash-r1c/cdn-go-sdk"
+    openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func main() {
@@ -311,7 +311,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/arash-r1c/cdn-go-sdk"
+    openapiclient "github.com/arash-r1c/cdn-go"
 )
 
 func main() {

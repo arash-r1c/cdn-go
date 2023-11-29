@@ -1,4 +1,4 @@
-module github.com/arash-r1c/cdn-go-sdk
+module github.com/arash-r1c/cdn-go
 
 go 1.18
 
